@@ -30,8 +30,8 @@ Ensure these dependencies are included in your `pom.xml` file.
 
 ## Configuration
 The `application.properties` file should be configured with the paths for the reference file and the directory containing files to compare.
-  pathA: "path/to/reference/file"
-  directory: "path/to/files/directory"
+  pathA: "FileSimilarity/Files/fileA.txt"
+  directory: "FileSimilarity/Files/directory"
 
  ## services
 FileProcessingService
@@ -113,10 +113,17 @@ Example Response:
 ## json
 
 {
-  "path/to/file1.txt": "85%",
-  "path/to/file2.txt": "75%"
+    "FileSimilarity\\Files\\directory\\file8.txt": "48%",
+    "FileSimilarity\\Files\\directory\\file7.txt": "95%",
+    "FileSimilarity\\Files\\directory\\file10.txt": "51%",
+    "FileSimilarity\\Files\\directory\\file9.txt": "85%",
+    "FileSimilarity\\Files\\directory\\file5.txt": "92%",
+    "FileSimilarity\\Files\\directory\\file6.txt": "98%",
+    "FileSimilarity\\Files\\directory\\file1.txt": "100%",
+    "FileSimilarity\\Files\\directory\\file4.txt": "94%",
+    "FileSimilarity\\Files\\directory\\file3.txt": "97%",
+    "FileSimilarity\\Files\\directory\\file2.txt": "96%"
 }
-
 
 
   
